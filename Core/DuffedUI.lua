@@ -28,4 +28,5 @@ function AS:UpdateMedia()
 	AS.Font = C['media']['font']
 	AS.BackdropColor = C['general']['backdropcolor']
 	AS.BorderColor = C['general']['bordercolor']
+	AS.HideShadows = true
 end
