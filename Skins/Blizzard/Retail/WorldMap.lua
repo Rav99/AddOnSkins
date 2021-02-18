@@ -421,7 +421,7 @@ function AS:Blizzard_WorldMap()
 	AS:SkinBackdropFrame(WorldMapFrame)
 	AS:CreateShadow(WorldMapFrame.Backdrop)
 
-	AS:StripTextures(WorldMapFrame.BorderFrame, true)
+	AS:StripTextures(WorldMapFrame.BorderFrame)
 	AS:SkinCloseButton(WorldMapFrame.BorderFrame.CloseButton)
 
 	AS:Kill(WorldMapFrame.BorderFrame.Tutorial)

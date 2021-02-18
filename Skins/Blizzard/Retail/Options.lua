@@ -203,7 +203,9 @@ function AS:Blizzard_Options(event, addon)
 		ColorPickerCancelButton:SetPoint("BOTTOMRIGHT", -11, 6)
 		ColorPickerOkayButton:SetPoint("RIGHT", ColorPickerCancelButton, "LEFT", -3, 0)
 		AS:SkinSlideBar(OpacitySliderFrame)
---		ColorPickerFrame.Header:SetTexture()
+		-- ColorPickerFrame.Header:SetTexture()
+		_G.ColorPickerFrame.Border:Hide()
+		_G.ColorPickerFrame.Header:StripTextures()
 
 		AS:SkinFrame(OpacityFrame)
 
