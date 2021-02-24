@@ -1,6 +1,6 @@
 ## Interface: 90002
 ## Title: AddOnSkins
-## Version: 4.48
+## Version: 4.49
 ## Author: Azilroka, NihilisticPandemonium
 ## SavedVariables: AddOnSkinsDB, AddOnSkinsDS
 ## OptionalDeps: ElvUI
