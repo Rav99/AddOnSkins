@@ -325,35 +325,35 @@ function AS:Blizzard_PvE()
 	AS:SkinButton(LFGInvitePopupDeclineButton)
 
 	hooksecurefunc("LFGListApplicationDialog_UpdateRoles", function(self) --Copy from Blizzard, we just fix position
-		local availTank, availHealer, availDPS = C_LFGList.GetAvailableRoles();
+		local availTank, availHealer, availDPS = C_LFGList.GetAvailableRoles()
 
-		local avail1, avail2;
-		if ( availTank ) then
-			avail1 = self.TankButton;
+		local avail1, avail2
+		if availTank then
+			avail1 = self.TankButton
 		end
-		if ( availHealer ) then
-			if ( avail1 ) then
-				avail2 = self.HealerButton;
+		if availHealer then
+			if avail1 then
+				avail2 = self.HealerButton
 			else
-				avail1 = self.HealerButton;
+				avail1 = self.HealerButton
 			end
 		end
-		if ( availDPS ) then
-			if ( avail1 ) then
-				avail2 = self.DamagerButton;
+		if availDPS then
+			if avail1 then
+				avail2 = self.DamagerButton
 			else
-				avail1 = self.DamagerButton;
+				avail1 = self.DamagerButton
 			end
 		end
 
-		if ( avail2 ) then
-			avail1:ClearAllPoints();
-			avail1:SetPoint("TOPRIGHT", self, "TOP", -40, -35);
-			avail2:ClearAllPoints();
-			avail2:SetPoint("TOPLEFT", self, "TOP", 40, -35);
-		elseif ( avail1 ) then
-			avail1:ClearAllPoints();
-			avail1:SetPoint("TOP", self, "TOP", 0, -35);
+		if avail2 then
+			avail1:ClearAllPoints()
+			avail1:SetPoint("TOPRIGHT", self, "TOP", -40, -35)
+			avail2:ClearAllPoints()
+			avail2:SetPoint("TOPLEFT", self, "TOP", 40, -35)
+		elseif avail1 then
+			avail1:ClearAllPoints()
+			avail1:SetPoint("TOP", self, "TOP", 0, -35)
 		end
 	end)
 
@@ -373,7 +373,7 @@ function AS:Blizzard_PvE()
 
 	AS:SkinButton(LFGListFrame.SearchPanel.BackButton, true)
 	AS:SkinButton(LFGListFrame.SearchPanel.SignUpButton, true)
-	AS:SkinButton(LFGListSearchPanelScrollFrame.StartGroupButton,  true)
+	AS:SkinButton(LFGListSearchPanelScrollFrameScrollChild.StartGroupButton,  true)
 	LFGListFrame.SearchPanel.BackButton:ClearAllPoints()
 	LFGListFrame.SearchPanel.BackButton:SetPoint("BOTTOMLEFT", -1, 3)
 	LFGListFrame.SearchPanel.SignUpButton:ClearAllPoints()
