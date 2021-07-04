@@ -252,6 +252,7 @@ end
 local function SkinOptions()
 	local options = {
 		_G.AuctionatorConfigBasicOptionsFrame,
+		_G.AuctionatorConfigQuantitiesFrame,
 		_G.AuctionatorConfigTooltipsFrame,
 		_G.AuctionatorConfigShoppingFrame,
 		_G.AuctionatorConfigSellingFrame,
